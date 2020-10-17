@@ -1,0 +1,147 @@
+html, body{
+ font-family: 'Roboto', sans-serif;
+ margin: 0;
+ font-weight: 300;
+}
+
+.header{
+    width: 100%;
+    height: 550px;
+    border: 0;
+}
+
+.content{
+    max-width: 1000;
+    margin: 40px auto;
+    background-color: #eee;
+    padding: 20px;
+}
+
+.content .title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.content .tabel{
+    background-color: rgba(0, 0, 0, .05);
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+}
+
+.content .text{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.bottom {
+    height: 40px;
+    background-color: black;
+    background-size: cover;
+    background-position: center, center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+.bottom-box {
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 1fr auto auto auto;
+    left: 100px;
+    right: 100px;
+}
+
+.bottom .bottom-box a {
+    color: grey;
+    text-decoration: none;
+    font-weight: normal;
+    font-size: small;
+}
+
+.bottom .bottom-box a:hover{
+    text-shadow: 0 0 10px orange;
+    color: orange;
+}
+
+.fab {
+    margin-right: 30px;
+}
+
+.fas {
+    margin-right: 30px;
+}
+
+.photo{
+    height: 600px;
+    background-image: url(top.jpg);
+    position: relative;
+    margin: 100px 0 0 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.photocontainer{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+@media screen and (max-width: 800px) {
+    .photocontainer{
+        grid-template-columns: auto;
+    }
+}
+
+.photo .photocontainer .photos{
+    height: 300px;
+    background-image: url(photo.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    bottom: 0px;
+    margin: 30px;
+}
+
+.photo .photocontainer .photos .photobottom{
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    padding: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.photo .photocontainer .photos .photobottom:hover{
+    background-color: rgba(250, 150, 0, 0.7);
+}
+
+.photo .photocontainer .photos .photobottom a{
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 36%;
+    right: 0;
+    color: white;
+    font-size: 50px;
+}
+
+.photo .photocontainer .photos .photobottom a:hover{
+    text-shadow: 0 0 10px white;
+}

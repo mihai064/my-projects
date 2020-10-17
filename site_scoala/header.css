@@ -1,0 +1,47 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    height: 550px;
+    background-image: url(top.jpg);
+    position: relative;
+    background-attachment: fixed; /*parallax effect*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+   
+   .header .menu-container {
+       background-color: rgba(0, 0, 0, .7);
+       color: white;
+       padding: 20px;
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       display: grid;
+       grid-template-columns: 1fr auto;
+   }
+
+   .header .menu-container .logo {
+       font-size: large;
+   }
+   
+   .header .menu-container .menu {
+       display: grid;
+       grid-template-columns: repeat(4, auto);
+       gap: 20px;
+   }
+   
+   .header .menu-container .menu a {
+       color: white;
+       text-decoration: none;
+       font-weight: normal;
+   }
+   
+   .header .menu-container .menu a:hover {
+       text-shadow: 0 0 10px orange;
+       color: orange;
+   }
